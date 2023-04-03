@@ -24,6 +24,8 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -930,42 +932,52 @@ footer ul li {
   transform: translateX(-50%);
 }
 
-.user-rate {
-  margin-bottom: 40px;
-}
-
-.user-info {
+.reviews-container {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
 }
-
-.user-avt {
-  height: 50px;
-  width: 50px;
+.reviews-container .box {
+  flex: 1 1 13rem;
+  padding: 20px;
+}
+.rev-img {
+  width: 80px;
+  height: 80px;
+}
+.rev-img img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
-
-.user-name {
-  margin-left: 20px;
+.reviews-container .box {
   display: flex;
-  align-items: stretch;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 10px 10px 5px gray;
 }
-
-.name {
+.reviews-container .box h2 {
+  font-size: 1.1rem;
   font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 10px;
+  margin: 0.5rem 0 0.5rem;
 }
-
-.user-rate-content {
-  line-height: 25px;
+.reviews-container .box p {
+  font-style: italic;
 }
-
+.reviews-container .box .stars .bx {
+  color: var(--main-color);
+}
+.reviews-container .box:hover {
+  color: #fe5b3d;
+  transition: 1s;
+  transform: scale(1.1);
+}
 /* responsive */
 
 @media only screen and (max-width: 1280px) {
