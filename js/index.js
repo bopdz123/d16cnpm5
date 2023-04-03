@@ -147,9 +147,14 @@ products.forEach((e) => {
 // add
 //login
 let login = document.querySelector(".login-form");
-document.querySelector("#user-icon-circle").onclick = () => {
+document.querySelector("#user-circle").onclick = () => {
   login.classList.toggle("active");
   cart.classList.remove("active");
-  navbar.classList.remove("active");
-  menu.classList.remove("move");
 };
+//cart
+let cart = document.querySelector(".cart");
+document.querySelector("#cart-icon").onclick = () => {
+  cart.classList.toggle("active");
+  login.classList.remove("active");
+};
+
