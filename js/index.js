@@ -152,6 +152,7 @@ document.querySelector("#user-circle").onclick = () => {
   cart.classList.remove("active");
 };
 //cart
+
 let cart = document.querySelector(".cart");
 document.querySelector("#cart-icon").onclick = () => {
   cart.classList.toggle("active");
