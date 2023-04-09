@@ -145,14 +145,8 @@ products.forEach((e) => {
   best_product_list.insertAdjacentHTML("afterbegin", prod);
 });
 // add
-//login
-let login = document.querySelector(".login-form");
-document.querySelector("#user-circle").onclick = () => {
-  login.classList.toggle("active");
-  cart.classList.remove("active");
-};
-//cart
 
+//cart
 let cart = document.querySelector(".cart");
 document.querySelector("#cart-icon").onclick = () => {
   cart.classList.toggle("active");
